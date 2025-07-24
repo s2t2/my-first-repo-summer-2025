@@ -12,6 +12,6 @@ Here is a list:
 
 For more information about Markdown syntax, see the [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/).
 
-Another edit to the README.md
+Another edit to the README.md.
 
 Here is an edit made on my feature branch.
