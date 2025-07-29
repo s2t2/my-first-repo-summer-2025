@@ -14,20 +14,22 @@ VALID_OPTIONS = ["rock", "paper", "scissors"]
 computer_choice = random.choice(VALID_OPTIONS)
 print("COMPUTER CHOSE:", computer_choice)
 
+def determine_winner(u, c):
+    if u == c:
+        result = "TIE GAME"
+    elif u == "rock" and c == "scissors":
+        result = "USER WINS"
+    elif u == "rock" and c == "paper":
+        result = "COMP WINS"
+    elif u == "scissors" and c == "rock":
+        result = "COMP WINS"
+    elif u == "scissors" and c == "paper":
+        result = "USER WINS"
+    elif u == "paper" and c == "rock":
+        result = "COMP WINS"
+    elif u == "paper" and c == "scissors":
+        result = "COMP WINS"
+    return result
 
-if player_choice == computer_choice:
-    result = "TIE GAME"
-elif player_choice == "rock" and computer_choice == "scissors":
-    result = "USER WINS"
-elif player_choice == "rock" and computer_choice == "paper":
-    result = "COMP WINS"
-elif player_choice == "scissors" and computer_choice == "rock":
-    result = "COMP WINS"
-elif player_choice == "scissors" and computer_choice == "paper":
-    result = "USER WINS"
-elif player_choice == "paper" and computer_choice == "rock":
-    result = "COMP WINS"
-elif player_choice == "paper" and computer_choice == "scissors":
-    result = "COMP WINS"
-
-print(result)
+result_message = determine_winner(player_choice, computer_choice)
+print(result_message)
