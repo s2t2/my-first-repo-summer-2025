@@ -30,6 +30,12 @@ python app/rps.py
 python -m app.rps
 ```
 
+## Web App
+
+```sh
+FLASK_APP=web_app flask run
+```
+
 ## Tests
 
 Run the tests:
