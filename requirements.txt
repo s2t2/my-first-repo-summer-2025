@@ -2,7 +2,8 @@
 
 # packages used in the app:
 
-# ...
+flask
+gunicorn
 
 
 # packages used for testing:

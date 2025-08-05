@@ -5,6 +5,9 @@ import random
 
 VALID_OPTIONS = ["rock", "paper", "scissors"]
 
+def generate_random_choice():
+    return random.choice(VALID_OPTIONS)
+
 def determine_winner(u, c):
     if u == c:
         result = "TIE GAME"
@@ -36,7 +39,7 @@ if __name__ == "__main__":
 
     # todo: validation step
 
-    computer_choice = random.choice(VALID_OPTIONS)
+    computer_choice = generate_random_choice()
     print("COMPUTER CHOSE:", computer_choice)
 
     result_message = determine_winner(player_choice, computer_choice)

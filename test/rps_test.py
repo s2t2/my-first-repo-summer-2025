@@ -1,9 +1,12 @@
 # this is the "test/rps_test.py" file...
 
-from app.rps import determine_winner
+from app.rps import determine_winner, generate_random_choice, VALID_OPTIONS
 
 def test_example():
     assert 2 + 2 == 4
+
+def test_computer_choice():
+    assert generate_random_choice() in VALID_OPTIONS
 
 
 def test_winner():
