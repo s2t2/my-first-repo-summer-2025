@@ -6,3 +6,6 @@ flask
 
 # packages used for testing:
 pytest
+
+# packages used on the production server:
+gunicorn
